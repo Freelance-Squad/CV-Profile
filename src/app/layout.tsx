@@ -12,8 +12,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <Topbar />
-      <body>{children}</body>
+
+      <body>
+        <Topbar />
+        {children}
+      </body>
     </html>
   );
 };
